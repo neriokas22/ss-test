@@ -1,0 +1,205 @@
+//
+// RESET
+//
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}.clearfix:after{content: "";display: table;clear: both;}
+
+//
+// GENERAL
+//
+body, html {
+    height: 100%;
+    background-color: #111;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -600px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #222;
+     -webkit-box-shadow: 0px 0px 20px 0px #000;
+    -moz-box-shadow: 0px 0px 20px 0px #000;
+    box-shadow: 0px 0px 20px 0px #000;
+    .left {
+        position: absolute;
+        width: 1200px;
+        height: 500px;
+        background-image: url(../images/dota.jpg);
+        background-size: cover;
+        .shadow {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-box-shadow: inset 0px 0px 30px 0px #000;
+            -moz-box-shadow: inset 0px 0px 30px 0px #000;
+            box-shadow: inset 0px 0px 30px 0px #000;
+        }
+        span {
+            position: absolute;
+            opacity: .75;
+            display: block;
+            top: 160px;
+            left: 100px;
+            color: #fff;
+            font-size: 40px;
+            text-transform: uppercase;
+            -webkit-text-shadow: 1px 1px #000;
+            -moz-text-shadow: 1px 1px #000;
+            text-shadow: 1px 1px #000;
+            font-weight: 800;
+            h2 {
+                font-size: 22px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #888;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                color: #eee;
+                display: block;
+                width: 600px;
+                text-transform: none;
+                font-weight: 400;
+            }
+            a:link, a:visited {
+                color: #fff;
+                display: inline-block;
+                background-color: black;
+                padding: 10px 15px;
+                margin-top: 20px;
+                font-size: 12px;
+                -webkit-text-shadow: 1px 1px #000;
+                -moz-text-shadow: 1px 1px #000;
+                text-shadow: 1px 1px #000;
+                text-decoration: none;
+                border-bottom: 3px solid #fff;
+                font-weight: 400;
+            }
+            a:hover {
+                border-bottom: 3px solid #3d3dc5;
+            }
+        }
+    }
+    .right {
+        left: 600px;
+        background-color: rgba(#ccc, .5);
+        position: absolute;
+        height: 500px;
+        width: 2000px;
+        -webkit-transform: skewX(-55deg);
+        -moz-transform: skewX(-55deg);
+        transform: skewX(-55deg);
+        border-left: 10px solid #fff;
+        overflow: hidden;
+    }
+    .re_skew {
+        position: absolute;
+        -webkit-transform: skewX(55deg);
+        -moz-transform: skewX(55deg);
+        transform: skewX(55deg);
+        .right_content {
+            position: absolute;
+            left: -725px;
+            width: 1400px;
+            height: 500px;
+            background-image: url(../images/csgo.jpg);
+            background-size: cover;
+            -webkit-text-shadow: 1px 1px #000;
+            -moz-text-shadow: 1px 1px #000;
+            text-shadow: 1px 1px #000;
+            .shadow {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                -webkit-box-shadow: inset 0px 0px 30px 0px #000;
+                -moz-box-shadow: inset 0px 0px 30px 0px #000;
+                box-shadow: inset 0px 0px 30px 0px #000;
+            }
+            span {
+                opacity: 0;
+                position: absolute;
+                display: block;
+                top: 50px;
+                left: 725px;
+                color: #fff;
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: 800;
+                h2 {
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    color: #888;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 16px;
+                    color: #eee;
+                    display: block;
+                    width: 600px;
+                    text-transform: none;
+                    font-weight: 400;
+                }
+                a:link, a:visited {
+                    color: #fff;
+                    display: inline-block;
+                    background-color: black;
+                    padding: 10px 15px;
+                    margin-top: 20px;
+                    font-size: 12px;
+                    -webkit-text-shadow: 1px 1px #000;
+                    -moz-text-shadow: 1px 1px #000;
+                    text-shadow: 1px 1px #000;
+                    text-decoration: none;
+                    border-bottom: 3px solid #fff;
+                    font-weight: 400;
+                }
+                a:hover {
+                    border-bottom: 3px solid #3d3dc5;
+                }
+            }
+        }
+    }
+}
+
+
+
+//
+// RESPONSIVE 1200px
+//
+@media (max-width: 1200px) {
+    
+}
+
+
+
+//
+// RESPONSIVE 992px
+//
+@media (max-width: 992px) {
+    
+}
+
+
+
+//
+// RESPONSIVE 768px
+//
+@media (max-width: 768px) {
+
+}
+
+
